@@ -25,13 +25,13 @@ This project demonstrates how to implement reliable 8-byte data communication be
 
 | MCP2515 Pin | ESP32-S3        | Arduino UNO |
 |-------------|------------------|-------------|
-| VCC         | 3.3V             | 5V          |
+| VCC         | 5V               | 5V          |
 | GND         | GND              | GND         |
 | CS          | GPIO10           | D10         |
 | SO (MISO)   | GPIO13           | D12         |
 | SI (MOSI)   | GPIO11           | D11         |
 | SCK         | GPIO12           | D13         |
-| INT         | GPIO9 (optional) | D2 (optional) |
+| INT         | GPIO9            | D2 (optional) |
 
 > Note: Ensure **common ground** between ESP32-S3, Arduino, and both MCP2515 modules.
 
