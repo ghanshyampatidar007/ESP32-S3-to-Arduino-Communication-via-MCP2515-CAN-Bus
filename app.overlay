@@ -1,0 +1,14 @@
+&spi2 {
+    status = "okay";
+    mcp2515: mcp2515@0 {
+        compatible = "microchip,mcp2515";
+        reg = <0>;                          // SPI Chip Select (CS)
+        spi-max-frequency = <1000000>;      // SPI Clock
+        int-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;  // INT pin (change if needed)
+        osc-freq = <8000000>;               // MCP2515 crystal oscillator (8 MHz)
+        status = "okay";
+        bus-speed = <500000>;               //CAN bitrate = 500 kbps
+    };
+};
+
+
